@@ -4,35 +4,11 @@ select *
 from samri..CovidDeaths
 order by 3, 4
 
---select * 
---from samri..Covidvas
---order by 3, 4
+
 
 select Location,date, total_cases, new_cases, total_deaths, population
 from CovidDeaths
 order by 1,2
-
---changeng data type
-
-alter table Covidvas
-alter column new_vaccinations float
-
-alter table CovidDeaths
-alter column total_cases Float;
-
-alter table CovidDeaths
-alter column population Float;
-
-use Samri
-alter table CovidDeaths
-alter column new_deaths Float;
-
-ALTER TABLE CovidDeaths 
-ALTER COLUMN date DATE;
-
-ALTER TABLE Covidvas
-ALTER COLUMN date DATE;
-
 
 ---Total cases vs total Death---
 ----Shows the likelihood of dying in USA
